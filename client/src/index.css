@@ -1,0 +1,102 @@
+/* Container for the search input and autocomplete suggestions */
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .search-container {
+    position: relative;
+  }
+  
+  /* Search input */
+  .search-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0;
+    box-sizing: border-box;
+  }
+
+  .search-input:focus {
+    outline: none;
+  }
+
+
+  .search-input.no-border {
+    border-bottom: none;
+  }
+
+  .remove-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    border: none;
+    background: none;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    color: #444;
+  }
+  
+  /* Autocomplete suggestions */
+  .autocomplete-suggestions {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 0;
+  }
+  
+  /* Autocomplete suggestion item */
+  .autocomplete-suggestion {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .autocomplete-suggestion.in-history {
+    color: #52188c;
+    font-style: italic;
+  }
+
+  .autocomplete-suggestion:hover {
+    background-color: #f8f8f8;
+  }
+
+  .autocomplete-suggestion-text {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Highlighted suggestion item */
+  .autocomplete-suggestion.highlighted {
+    background-color: #f2f2f2;
+  }
+
+  .search-results {
+    text-align: left;
+  }
+
+  .search-results-info {
+    text-align: left;
+    color: #70757a
+  }
